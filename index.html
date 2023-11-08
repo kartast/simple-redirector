@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Website</title>
+    </head>
+    <body>
+        <h1>Welcome to my website!</h1>
+        <p>Here is some content for my website.</p>
+        <script>
+            // Get the URL parameter value
+            const urlParams = new URLSearchParams(window.location.search);
+            const redirectUrl = urlParams.get('redirect');
+
+            // Redirect to the specified URL
+            if (redirectUrl) {
+                window.location.href = redirectUrl;
+            }
+        </script>
+    </body>
+</html>
